@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky-light: #7DD3FC;
+  --color-sky-mid: #BAE6FD;
+  --color-sunset: #FEF9C3;
+  --color-grass-main: #4ADE80;
+  --color-grass-dark: #22C55E;
+  --color-dirt-main: #A16207;
+  --color-popcorn: #FDE047;
+  --color-popcorn-dark: #854D0E;
+  --color-jelly: #D946EF;
+  --color-jelly-dark: #701A75;
+  --color-platform: #F97316;
+  --color-platform-dark: #C2410C;
+  --color-platform-shadow: #9A3412;
+  --color-star-main: #FACC15;
+}
+
+:root {
+  --sky: #BAE6FD;
+  --grass: #4ADE80;
+  --dirt: #A16207;
+  --popcorn: #FDE047;
+  --jelly: #D946EF;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #BAE6FD; /* Sky color to prevent flash */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.stat-capsule {
+  background: rgba(255, 255, 255, 0.95);
+  border: 4px solid #334155;
+  border-radius: 999px;
+  padding: 12px 28px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.stat-text {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1E293B;
+  text-transform: uppercase;
+  line-height: 1;
+}
